@@ -1,0 +1,95 @@
+GET http://localhost:4000/user-api/users
+Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJldmFudGgzM0BnbWFpbC5jb20iLCJpYXQiOjE3NzMyOTE4MDksImV4cCI6MTc3MzI5NTQwOX0.zX7EMkihtTemH2JX9wTUJS5ANmVNTFjJqTt2pQzUviA; Path=/; HttpOnly; SameSite=Lax
+
+###
+GET http://localhost:4000/user-api/user
+
+
+
+###
+POST http://localhost:4000/user-api/users
+# Cookie: token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InJldmFudGgzM0BnbWFpbC5jb20iLCJpYXQiOjE3NzI4NzYzNjksImV4cCI6MTc3Mjg3OTk2OX0.Jc0t_zIsVzChZd-cIDn_J0Oxb7Yejb2QKFsbeIqV1Z4; Path=/; HttpOnly; SameSite=Lax
+Content-Type: application/json
+
+{
+    "username":"revth",
+    "password":"reva33",
+    "email":"revanth33@gmail.com",
+    "age":17
+}
+
+###
+PUT http://localhost:4000/user-api/users
+Content-Type: application/json
+
+{
+    "username":"revant",
+    "password":"revanth33",
+    "email":"revanth@gmail.com",
+    "age":21
+}
+
+###
+
+
+POST  http://localhost:4000/user-api/auth
+Content-Type: application/json
+
+{
+    "email":"revanth33@gmail.com",
+    "password":"reva33"
+}
+
+
+
+
+### HTTP/1.1
+//Delete a userby ID
+DELETE http://localhost:4000/user-api/users/69aa6d7863edd42a08dcb018
+
+###
+
+
+
+
+
+
+
+
+
+
+
+GET http://localhost:4000/product-api/Products
+
+###
+GET http://localhost:4000/product-api/Products
+
+###
+POST http://localhost:4000/product-api/Products
+Content-Type: application/json
+
+{
+    "productId":1,
+    "productName":"Bat",
+    "price":40000,
+    "brand":"MRF"
+}
+
+###
+PUT http://localhost:4000/product-api/Products
+Content-Type: application/json
+
+{
+     "ProductId":3,
+    "name":"Bowl",
+    "brand":"MRF",
+    "Price":2000
+}
+
+###
+//Delete a userby ID
+DELETE http://localhost:4000/product-api/Products/1
+
+###
+
+PUT http://localhost:4000/product-api/cart/69b2573150c5f1e44b3e592d

@@ -1,0 +1,23 @@
+1.generate package.json
+2.create express server
+3.install mongoose and connect to mongodb server
+3.build user api.
+-create user
+-read users
+-read user by id
+-update a user by id
+-delete a user by id.
+5.create a schema and model of the resource(user).
+6.define routes
+###User authentication(Login)
+-submit credentials and and get token. 
+7.there are to types of rotes :1.private route and 2.public route
+1.public rotue can be accessd by anyone.
+2.but for an private route it can be accessed by an authenticated user.
+by default every route is a public route.  
+xss and csrf...
+if you save something as http only cookie then the brrowser wont be able to read it.
+7.to access cookie property of request object we need cookie parser middleware otherwise req.cookies is undefined.
+8.Cross orgin vs same origin cross means when the client and server are running in different domains.
+same origi the clinet also running on the same origin if the domain
+cookies will send along with the request automatically in same orinin request but for cross origin request the token should be explicitly included to the request.
