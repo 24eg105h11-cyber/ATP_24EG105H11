@@ -1,0 +1,5 @@
+Imperative programming: It means giving instructions in each and every step in detail so the program executes in line by line according to the details.
+Ex:VennilaJs
+Declerative:It means giving command to do a work and it does without detail information.
+Ex:ReactJs
+When ever a change is made in the document the virtual dom gets created and the when those changes occur the structure of the dom will get confused or become incomplete in that place but while using th React 
